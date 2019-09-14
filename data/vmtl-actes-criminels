@@ -1,0 +1,48 @@
+https://www.donneesquebec.ca/recherche/fr/dataset/vmtl-actes-criminels
+
+Couverture territoriale
+
+Les données couvrent l'ensemble de l'agglomération de Montréal (e.g toute l'île de Montréal)
+
+Le poste de quartier 50 correspond à l'unité en charge du métro. Pour les événements prenant place dans le métro, la localisation est celle de l'édicule concerné ou un point fictif entre deux édicules.
+Dictionnaire de données
+
+    CATEGORIE : Nature de l'événement. Liste de valeur :
+        Introduction : introduction par effraction dans un établissement public ou une résidence privée, vol d’arme à feu dans une résidence
+        Vol dans / sur véhicule à moteur : vol du contenu d’un véhicule à moteur (voiture, camion, motocyclette, etc.) ou d’une pièce de véhicule (roue, parechoc, etc.)
+        Vol de véhicule à moteur : vol de voiture, camion, motocyclette, motoneige tracteur avec ou sans remorque, véhicule de construction ou de ferme, tout-terrain
+        Méfait : Graffiti et dommage de biens religieux, de véhicule ou dommage général et tous autres types de méfaits
+        Vol qualifié : Vol accompagné de violence de commerce, institution financière, personne, sac à main, véhicule blindé, véhicule, arme à feu, et tous autres types de vols qualifiés
+        Infraction entraînant la mort : Meurtre au premier degré, meurtre au deuxième degré, homicide involontaire, infanticide, négligence criminelle, et tous autres types d’infractions entraînant la mort
+
+    DATE : Date du signalement de l'événement au SPVM au format AAAA-MM-JJ HH:mm:ss (note: la partie de l'heure n'est pas utilisée)
+
+    QUART : Moment de la journée du signalement de l'événement au SPVM. Liste de valeur :
+        jour : Entre 8h01 et 16h
+        soir : Entre 16h01 et minuit
+        nuit : Entre 00h01 et 8h
+
+    PDQ : Numéro du poste de quartier couvrant le territoire où s'est passé l'événement. Le territoire couvert par chaque poste est disponible dans l'ensemble de données des limites de PDQ
+
+    X et Y : Position géospatiale selon la projection MTM8 (SRID 2950)
+        La valeur 0 est utilisée lorsqu'aucune position géographique n'a été fournie lors de la saisie de l'information (moins de 5% des cas).
+
+    LAT et LONG: position géographique de l'événement après obfuscation à une intersection selon le référentiel géodésique WGS84.
+        La valeur 1 est utilisée lorsqu'aucune position géographique n'a été fournie lors de la saisie de l'information (moins de 5% des cas).
+
+
+https://www.donneesquebec.ca/recherche/fr/dataset/vmtl-carte-postes-quartier
+
+Les coordonnées des postes de quartier (PDQ) sont mises à jour occasionnellement.
+Dictionnaire de données
+
+    longitude: longitude selon le système de coordonnées GWS84,
+    latitude: latitude selon le système de coordonnées GWS84,
+    NO_CIV_LIE: Numéro de rue,
+    PREFIX_TEM: Type de route (rue, avenue, etc.),
+    NOM_TEMP: Nom de la rue,
+    DIR_TEMP: Direction de la rue (est, ouest),
+    MUN_TEMP: Code de municipalité,
+    DESC_LIEU: Numéro du poste de quartier
+
+
